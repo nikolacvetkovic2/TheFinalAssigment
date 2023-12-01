@@ -1,0 +1,1 @@
+2023-11-30 17:58:10.487 [main] INFO  pages.BasePage - Element [[ChromeDriver: chrome on windows (b9a42ef1393fa6d9f0a5dd6b8b68f324)] -> xpath: //*[@class='fa fa-lock']/..]has been clicked.

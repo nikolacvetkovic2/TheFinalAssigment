@@ -1,0 +1,4 @@
+2023-12-01 01:23:25.889 [main] INFO  listeners.TestListener - Starting test: registerUser
+2023-12-01 01:23:28.028 [main] INFO  pages.RegisterPage - New user has been signed up. 
+2023-12-01 01:23:32.370 [main] INFO  pages.RegisterPage - New account has been created.
+2023-12-01 01:23:32.433 [main] INFO  listeners.TestListener - Test method: registerUser PASSED

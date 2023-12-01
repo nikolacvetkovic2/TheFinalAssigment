@@ -1,0 +1,2 @@
+2023-11-30 23:49:10.043 [main] ERROR pages.BasePage - FAILED- Text found in element: (6)
+POLO is not matched expected text: POLO

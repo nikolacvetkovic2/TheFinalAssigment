@@ -1,0 +1,4 @@
+2023-12-01 02:19:49.441 [main] INFO  pages.LoginPage - User has been successfully logged in. 
+2023-12-01 02:20:00.089 [main] INFO  pages.ProductsPage - Place Order button has been successfully clicked. 
+2023-12-01 02:20:00.235 [main] INFO  pages.CheckOutPage - Sum of the products is: 
+2023-12-01 02:20:00.341 [main] INFO  pages.CheckOutPage - Sum of the products is: 

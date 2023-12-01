@@ -1,0 +1,2 @@
+2023-12-01 01:29:54.597 [main] INFO  listeners.TestListener - Starting test: registerUser
+2023-12-01 01:29:55.141 [main] ERROR listeners.TestListener - Test method: registerUser FAILED

@@ -1,0 +1,3 @@
+2023-12-01 02:10:54.738 [main] INFO  pages.LoginPage - User has been successfully logged in. 
+2023-12-01 02:10:56.758 [main] INFO  pages.ProductsPage - The current number of the elements display on the page is:  
+2023-12-01 02:11:00.388 [main] INFO  pages.ProductsPage - The current number of the elements display on the page is:  
