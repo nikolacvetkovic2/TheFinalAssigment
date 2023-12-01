@@ -26,20 +26,20 @@ public class LoginTest extends BaseTest {
     @Test(description = "Login user happy path. ")
     public void loginUser() {
         registerPage.goToSignInPage();
-        loginPage.loginUser("nikola@gmail.com", "Lozinka1!");
+        loginPage.loginUser();
        Assert.assertTrue(loginPage.isElementDisplayed(), "Logout button is not displayed, user is not logged in. ");
     }
 
     @Test(description = "Login and logout user. ")
     public void loginUserAndLogout() {
         registerPage.goToSignInPage();
-        loginPage.loginUser("nikola@gmail.com", "Lozinka1!").logoutUser();
+        loginPage.loginUser().logoutUser();
         Assert.assertEquals(driver.findElement(By.xpath("//*[text()='New User Signup!']")).getText(),"New User Signup!", "User is not logged out. ");
     }
     @Test(dataProvider = "loginDataProvider", dataProviderClass = DataProviders.class)
-    public void invalidLoginTest(String username, String password) {
+    public void invalidLoginTest() {
         registerPage.goToSignInPage();
-        loginPage.loginUser(username, password);
+        loginPage.loginUser();
         Assert.assertTrue(loginPage.errorMessage());
     }
 
@@ -48,7 +48,7 @@ public class LoginTest extends BaseTest {
         List<LoginUser> list = Utils.getDataFromJson();
         for (int i = 0; i < list.size(); i++) {
             registerPage.goToSignInPage();
-            loginPage.loginUser(list.get(i).getUsername(), list.get(i).getPassword());
+            loginPage.loginUser();
         }
         Assert.assertTrue(loginPage.errorMessage());
     }

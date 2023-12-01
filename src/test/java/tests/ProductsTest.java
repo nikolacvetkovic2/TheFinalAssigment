@@ -26,7 +26,7 @@ public class ProductsTest extends BaseTest {
     @Test(description = "Products test, payment process and payment confirmation. ")
     public void productsTest() {
         registerPage.goToSignInPage();
-        loginPage.loginUser("nikola@gmail.com", "Lozinka1!");
+        loginPage.loginUser();
         productsPage.selectProducts();
         payment.populatePaymentPage();
 
@@ -37,7 +37,7 @@ public class ProductsTest extends BaseTest {
     @Test(description = "Filter testing. ")
     public void filterTest() {
         registerPage.goToSignInPage();
-        loginPage.loginUser("nikola@gmail.com", "Lozinka1!");
+        loginPage.loginUser();
         productsPage.clickOnProducts();
         System.out.println(productsPage.totalAmountOfTheProducts());
         productsPage.clickOnProducts().clickOnPolo();

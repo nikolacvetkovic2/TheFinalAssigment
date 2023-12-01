@@ -26,7 +26,7 @@ public class CheckOutTest extends BaseTest{
     @Test(description = "Products test. ")
     public void productsTest() {
         registerPage.goToSignInPage();
-        loginPage.loginUser("nikola@gmail.com", "Lozinka1!");
+        loginPage.loginUser();
         productsPage.selectProductsForCheckOut();
         System.out.println(checkOutPage.getProductPricesSum());
         System.out.println(checkOutPage.getTotalAmount());

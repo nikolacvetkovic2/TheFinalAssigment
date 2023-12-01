@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import utils.Utils;
 
 public class RegisterPage extends BasePage {
 
@@ -15,7 +16,6 @@ public class RegisterPage extends BasePage {
     public RegisterPage(WebDriver driver) {
         super(driver);
     }
-
 
     By signInLink = By.xpath("//*[@class='fa fa-lock']/..");
 

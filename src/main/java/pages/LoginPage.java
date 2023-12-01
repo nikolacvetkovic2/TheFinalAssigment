@@ -6,10 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.Utils;
 
 public class LoginPage extends BasePage {
 
     private static final Logger log = LogManager.getLogger(LoginPage.class.getName());
+
+    String emailInput= Utils.dotEnv().get("EMAIL");
+    String passwordInput= Utils.dotEnv().get("PASSWORD");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -27,9 +31,9 @@ public class LoginPage extends BasePage {
         clickElement(loginButton);
     }
 
-    public LoginPage loginUser(String email, String pass){
-        typeIn(loginEmail,email);
-        typeIn(password,pass);
+    public LoginPage loginUser(){
+        typeIn(loginEmail,emailInput);
+        typeIn(password,passwordInput);
         clickLoginButton();
         log.info("User has been successfully logged in. ");
         return  this;
